@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1 id="top"></h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seal_Manuel Ramos Oujo</title>
 </head>
 <body>
+    <h1 id="top"></h1>
     <h1>Seals</h1> 
    <p>This animal is an <strong> aquatic mammal </strong>, it eats another animals and has an overall round shape. Most of them live in the Artic and Antartic ocean, but they can be found in <strong>most  coasts</strong> around the world.
    </p>
@@ -28,9 +28,24 @@
          <img src="images/Furseal.jpg" alt="Seal" height="200"> 
    </ul>
     
-   <h1></h1>
     <a href="https://www.whoi.edu/know-your-ocean/ocean-topics/ocean-life/marine-mammals/seals/" target="_blank">Go to website</a>
     <p></p>
     <a href="#top">^</a>
+    <form action="service.php" method="post">
+        <label for="name"></label>
+        <input type="text" id="name" name="name" required>
+        <fieldset>
+            <caption>Colors</caption>
+            <p>Select your color:</p>
+            <input type="radio" id="red" name="color" value="red">
+            <label for="red">red</label>
+            <input type="radio" id="blue" name="color" value="blue">
+            <label for="blue">blue</label>
+            <input type="radio" id="yellow" name="color" value="yellow">
+            <label for="yellow">yellow</label>
+        </fieldset>
+        <input type="color" name="select_color"></input>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
